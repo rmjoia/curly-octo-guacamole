@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallengeTests/VismaCodeChallengeTests.csproj": {}
+  },
+  "projects": {
+    "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallenge/VismaCodeChallenge.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallenge/VismaCodeChallenge.csproj",
+        "projectName": "VismaCodeChallenge",
+        "projectPath": "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallenge/VismaCodeChallenge.csproj",
+        "packagesPath": "/Users/rjoia/.nuget/packages/",
+        "outputPath": "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallenge/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/rjoia/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaProxy": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallengeTests/VismaCodeChallengeTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallengeTests/VismaCodeChallengeTests.csproj",
+        "projectName": "VismaCodeChallengeTests",
+        "projectPath": "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallengeTests/VismaCodeChallengeTests.csproj",
+        "packagesPath": "/Users/rjoia/.nuget/packages/",
+        "outputPath": "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallengeTests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/rjoia/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallenge/VismaCodeChallenge.csproj": {
+                "projectPath": "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallenge/VismaCodeChallenge.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
