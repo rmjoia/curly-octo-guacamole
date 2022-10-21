@@ -1,8 +1,0 @@
-{
-"SpaProxyServer": {
-"ServerUrl": "https://localhost:44473",
-"LaunchCommand": "npm start",
-"WorkingDirectory": "/Users/rjoia/Projects/VismaCodeChallenge/VismaCodeChallenge/ClientApp/",
-"MaxTimeoutInSeconds": "120"
-}
-}
