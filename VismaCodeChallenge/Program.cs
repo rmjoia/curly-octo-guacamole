@@ -4,10 +4,15 @@ using VismaCodeChallenge.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+//  Logging to the console for this sandbox app
+builder.Host.ConfigureLogging(logging =>
+{
+    logging.ClearProviders();
+    logging.AddConsole();
+});
 
+// DI / IoC
 builder.Services.AddTransient<IHouseLoanCalculatorService, HouseLoanCalculatorService>();
-
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

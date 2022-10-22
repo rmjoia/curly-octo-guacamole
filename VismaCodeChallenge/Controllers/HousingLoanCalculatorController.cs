@@ -4,8 +4,12 @@ using VismaCodeChallenge.Models;
 
 namespace VismaCodeChallenge.Controllers;
 
+
 [ApiController]
 [Route("[controller]")]
+[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(MonthlyRepaymentSummary))]
+[ProducesResponseType(StatusCodes.Status400BadRequest)]
+[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 public class CalculateController : ControllerBase
 {
     private readonly ILogger<CalculateController> _logger;
@@ -20,20 +24,22 @@ public class CalculateController : ControllerBase
     [HttpPost]
     public IActionResult CalculateHouseLoan([FromBody] LoanCalculationInput loanCalculationInput)
     {
+        if (!loanCalculationInput.IsValid)
+        {
+            _logger.LogError("Error - Bad Data was sent, Loan Calculation Input was invalid!");
+
+            return BadRequest();
+        }
+
         MonthlyRepaymentSummary? result = null;
 
         try
         {
-            if (!loanCalculationInput.IsValid)
-            {
-                return BadRequest();
-            }
-
             result = _houseLoanCalculatorService.Calculate(loanCalculationInput);
         }
         catch (Exception ex)
         {
-            _logger.LogError("Error", ex.Message);
+            _logger.LogError($"Error: {ex.Message}");
             return StatusCode(500);
         }
 
