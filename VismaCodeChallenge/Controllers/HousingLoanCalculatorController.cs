@@ -24,6 +24,11 @@ public class CalculateController : ControllerBase
 
         try
         {
+            if (!loanCalculationInput.IsValid)
+            {
+                return BadRequest();
+            }
+
             result = _houseLoanCalculatorService.Calculate(loanCalculationInput);
         }
         catch (Exception ex)
