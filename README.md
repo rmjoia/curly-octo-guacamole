@@ -11,7 +11,7 @@ Clone or download the zip file from the project or from the email.
 If you're reading this, you probably already got it, but if you got it zipped and want to clone, the url is https://github.com/rmjoia/curly-octo-guacamole, I suppose you can ask access, It's a private repo.
 
 # Run the project
-You can run the following command `dotnet run --project VismaCodeChallenge` or if you navigate to the VismaCodeChallenge folder just by running `dotnet run`.
+You can run the following command `dotnet run --project VismaCodeChallenge` or if you navigate to the VismaCodeChallenge folder just by running `dotnet run` and navigating either to `https://localhost:7078` or `http://localhost:5113`.
 
 I've seen some scenarios where the npm packages weren't downloaded, in such case, you might have to navigate to VismaCodeChallenge/VismaCodeChallenge/ClientApp and run `npm install`.
 Might be needed, but dotnet might do it for you...
